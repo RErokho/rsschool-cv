@@ -1,0 +1,33 @@
+@keyframes moving {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes myMove {
+  from {
+    background-color: #e8e8e8;
+  }
+  to {
+    background-color: #8f8f8f;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  animation: myMove 2s infinite alternate;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.element {
+  height: 50%;
+  width: auto;
+  animation: moving 25s infinite linear;
+}
